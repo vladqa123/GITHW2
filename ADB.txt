@@ -5,7 +5,7 @@
  3. Установить .apk файл приложениия todolist на телефон с компьютера через  ADB
  .\adb install D:\Toodoo\001_ToDoList-master\001_ToDoList-master\app\build\outputs\apk\debug\Todolist.apk
  4. Сделать скриншот запущенного приложения todolist и сразу скопировать на компьютер в одной команде.
-.\adb pull /storage/emulated/0/DCIM/126.png && adb pull /storage/emulated/0/DCIM/126.png C:\Users\vlado\Downloads\platform-tools_r31.0.3-windows\platform-tools\126.png
+.\adb shell screencup /storage/emulated/0/DCIM/126.png && adb pull /storage/emulated/0/DCIM/126.png C:\Users\vlado\Downloads\platform-tools_r31.0.3-windows\platform-tools\126.png
  5. Вывести в консоль логи приложения todolist
 .\adb logcat |findstr -rnw "todolist"
  6. Скопировать логи приложения todolist на компьютер.
